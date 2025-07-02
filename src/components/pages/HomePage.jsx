@@ -139,13 +139,13 @@ const HomePage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
+viewport={{ once: true }}
                 className="glass-effect rounded-xl p-6 text-center hover:shadow-medium transition-all duration-300"
-className="glass-effect rounded-xl p-6 text-center hover:shadow-medium transition-all duration-300"
               >
                 <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
                   <AppIcon name={feature.icon} size={28} className="text-white" />
                 </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
