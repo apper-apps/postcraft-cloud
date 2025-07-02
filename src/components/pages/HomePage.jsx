@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import HeroSection from "@/components/organisms/HeroSection";
+import AppIcon from "@/components/atoms/AppIcon";
 import PostEditor from "@/components/organisms/PostEditor";
 import PostPreview from "@/components/organisms/PostPreview";
-import AppIcon from "@/components/atoms/AppIcon";
+import HeroSection from "@/components/organisms/HeroSection";
 
-const HomePage = () => {
+export default function HomePage() {
   const [postContent, setPostContent] = useState('')
   const editorRef = useRef(null)
 
@@ -179,5 +179,3 @@ viewport={{ once: true }}
     </div>
   )
 }
-
-export default HomePage
